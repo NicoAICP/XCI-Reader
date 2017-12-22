@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCI Header Reader", "Secret Switch reader\NCI Header Reader.csproj", "{64B43454-D932-45FC-B181-747393FBAA44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		NCI Header Reader|Any CPU = NCI Header Reader|Any CPU
+		NCI Header|Any CPU = NCI Header|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64B43454-D932-45FC-B181-747393FBAA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B43454-D932-45FC-B181-747393FBAA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B43454-D932-45FC-B181-747393FBAA44}.NCI Header Reader|Any CPU.ActiveCfg = NCI Header Reader|Any CPU
+		{64B43454-D932-45FC-B181-747393FBAA44}.NCI Header|Any CPU.ActiveCfg = NCI Header|Any CPU
+		{64B43454-D932-45FC-B181-747393FBAA44}.NCI Header|Any CPU.Build.0 = NCI Header|Any CPU
+		{64B43454-D932-45FC-B181-747393FBAA44}.NCI Header|Any CPU.Deploy.0 = NCI Header|Any CPU
+		{64B43454-D932-45FC-B181-747393FBAA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B43454-D932-45FC-B181-747393FBAA44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
