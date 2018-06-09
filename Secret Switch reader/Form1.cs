@@ -305,11 +305,21 @@ namespace Secret_Switch_reader
         {
             using (var client = new WebClient())
             {
-                client.DownloadFile("http://nswdb.com/xml.php", "DB.xml");
-                string NEWDB_location = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "DB.xml");
-                string OLDDB_locarion = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"DB.xml");
-                File.Delete(NEWDB_location);
-                File.Move(OLDDB_locarion, NEWDB_location);
+                try
+                {
+                    client.DownloadFile("http://nswdb.com/xml.php", "DB.xml");
+                    string NEWDB_location =
+                        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "DB.xml");
+                    string OLDDB_locarion =
+                        Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"DB.xml");
+                    File.Delete(NEWDB_location);
+                    File.Move(OLDDB_locarion, NEWDB_location);
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}");
+                }
             }
         }
     }
